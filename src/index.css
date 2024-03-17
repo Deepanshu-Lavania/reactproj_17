@@ -1,13 +1,113 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+.common_img{
+  min-height:25rem;
+}
+.navbar{
+  background-color: #fff !important;
+}
+.navbar-brand{
+  font-size:1.9rem;
+  color: #565387;
+}
+.container-fluid .navbar-expand-lg .navbar-collapse {
+  justify-content: end;
+}
+.navbar-brand{
+  font-size: 1.3rem;
+  text-transform:capitalize;
+}
+.navbar a:hover{
+  font-size: 1.2rem !important;
+}
+.nav-item a.active{
+  border-bottom:1.5px solid red;
+  color: rgb(23, 22, 22) !important;
+}
+#header h1{
+  margin:0 0 1rem 0;
+  font-size:40px;
+  font-weight: 700;
+  color: black;
+}
+#header .brand-name{
+  color: #3498db;
+}
+#header h2{
+  color: #484848;
+  font-size:2rem;
+}
+#header .btn-get-started{
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  color: #3498db;
+  border: 2px solid #3498db;
+  text-decoration: none;
+}
+#header .btn-get-started:hover{
+  background: #3498db;
+  color: #fff;
+}
+.header-img{
+  text-align: right;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#header .animated{
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  -webkit-animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@keyframes up-down{
+  0%{
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+}
+100%{
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+}
+
+/* Card start */
+.card_img .card img{
+  max-height:12.5rem;
+}
+
+
+
+
+
+
+
+@media (max-width:991px){
+  .navbar-brand{
+    font-size: 1.5rem !important;
+  }
+  .nav-item a.active{
+    border-bottom:none;
+    color: rgb(0, 0, 0) !important;
+  }
 }
